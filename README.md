@@ -4,6 +4,8 @@ AI-Powered Smart Food Delivery for ITS Surabaya. Built with Django, Scikit-Learn
 
 # 🛵 Jastip Raf: Hyper-Local Food AI Delivery
 > **Smart Food Recommendation System with Real-Time Context Awareness**
+<img width="1364" height="606" alt="home" src="https://github.com/user-attachments/assets/07783d3c-a7ff-47f8-be86-9142fa34d2c5" />
+
 
 ---
 
@@ -21,12 +23,14 @@ Sistem menggunakan mesin skoring cerdas yang menganalisis kondisi cuaca melalui 
 * **Hujan:** Otomatis mempromosikan menu hangat/berkuah.
 * **Panas:** Menu segar dan dingin akan naik ke peringkat atas.
 
-> **[ Masukkan GIF/Gambar Demo Rekomendasi AI di sini ]**
+<img width="793" height="465" alt="ai_recommend" src="https://github.com/user-attachments/assets/d3eca031-d6ac-42d0-96c0-14d54dd13940" />
+>**Contoh kasus: rekomendasi menu waktu malam hari**
 
 ### 2. Intelligent Search dengan TF-IDF
 Menggunakan algoritma **Cosine Similarity** dan **TF-IDF Vectorizer**. Sistem memahami konteks menu meskipun kata kuncinya tidak persis sama.
 
-> **[ Masukkan GIF/Gambar Demo Search Bar di sini ]**
+> **<img width="1215" height="605" alt="smart_search" src="https://github.com/user-attachments/assets/f5d93875-cbac-4e44-be59-bdbd3f0798a5" />**
+
 
 ### 3. Real-Time Traffic & Geolocation
 Menghitung jarak presisi antara merchant dan titik antar (ITS) menggunakan library **Geopy** serta memberikan status kepadatan jalan secara dinamis.
