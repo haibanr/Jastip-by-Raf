@@ -8,7 +8,7 @@ AI-Powered Smart Food Delivery for ITS Surabaya. Built with Django, Scikit-Learn
 ---
 
 ## 📝 Deskripsi Singkat
-**Jastip Raf** adalah platform *smart-delivery* berbasis web yang dirancang khusus untuk memfasilitasi jasa titip makanan di lingkungan **Kampus ITS Surabaya**. Berbeda dengan aplikasi jastip konvensional, Jastip Raf mengintegrasikan **Kecerdasan Buatan (AI)** untuk memberikan pengalaman pemesanan yang personal dan kontekstual.
+**Jastip Raf** adalah proyek platform *smart-delivery* berbasis web yang dirancang khusus untuk memfasilitasi jasa titip makanan di lingkungan **Kampus ITS Surabaya**. Berbeda dengan aplikasi jastip konvensional, Jastip Raf mengintegrasikan **Kecerdasan Buatan (AI)** untuk memberikan pengalaman pemesanan yang personal dan kontekstual.
 
 Aplikasi ini mampu mendeteksi cuaca secara *real-time* dan menganalisis waktu pemesanan untuk memberikan rekomendasi menu yang paling sesuai secara otomatis. Dengan dukungan **TF-IDF Machine Learning** untuk pencarian menu yang akurat dan fitur **Traffic Intelligence** untuk memprediksi kepadatan jalan, Jastip Raf mengubah cara mahasiswa memesan makanan menjadi lebih cerdas dan efisien.
 
