@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Sign In | Jastip Raf</title>
+</head>
+<body class="bg-[#121212] font-['Plus_Jakarta_Sans'] min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-md w-full bg-white/5 border border-white/10 p-10 rounded-[40px] backdrop-blur-xl">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-black text-white">Selamat Datang!</h2>
+            <p class="text-gray-400 mt-2">Masuk ke akun Jastip Raf kamu</p>
+        </div>
+
+        <form method="POST" class="space-y-6">
+            {% csrf_token %}
+            <div>
+                <label class="text-gray-400 text-sm font-bold ml-2">NOMOR WHATSAPP</label>
+                <input type="text" name="no_telp" placeholder="0812..." required
+                    class="w-full bg-white/5 border border-white/10 rounded-2xl p-4 mt-2 text-white focus:border-orange-500 outline-none transition">
+            </div>
+            <div>
+                <label class="text-gray-400 text-sm font-bold ml-2">PASSWORD</label>
+                <input type="password" name="password" placeholder="••••••••" required
+                    class="w-full bg-white/5 border border-white/10 rounded-2xl p-4 mt-2 text-white focus:border-orange-500 outline-none transition">
+            </div>
+            <button type="submit" class="w-full bg-orange-500 text-white font-black p-4 rounded-2xl hover:scale-105 transition shadow-lg shadow-orange-500/20">
+                MASUK SEKARANG
+            </button>
+        </form>
+
+        <p class="text-center text-gray-500 mt-8">
+            Belum punya akun? <a href="{% url 'home:signup' %}" class="text-orange-500 font-bold hover:underline">Daftar di sini</a>
+        </p>
+    </div>
+</body>
+</html>

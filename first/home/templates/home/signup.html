@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Daftar Akun | Jastip Raf</title>
+</head>
+<body class="bg-[#121212] font-['Plus_Jakarta_Sans'] min-h-screen flex items-center justify-center p-6 py-20">
+    <div class="max-w-xl w-full bg-white/5 border border-white/10 p-10 rounded-[40px] backdrop-blur-xl">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-black text-white">Buat Akun Baru</h2>
+            <p class="text-gray-400 mt-2">Lengkapi data untuk mulai jastip</p>
+        </div>
+
+        <form method="POST" class="space-y-5">
+            {% csrf_token %}
+            <div class="grid md:grid-cols-2 gap-5">
+                <div>
+                    <label class="text-gray-400 text-sm font-bold ml-2">NAMA LENGKAP</label>
+                    <input type="text" name="nama" placeholder="Budi Santoso" required
+                        class="w-full bg-white/5 border border-white/10 rounded-2xl p-4 mt-2 text-white focus:border-orange-500 outline-none transition">
+                </div>
+                <div>
+                    <label class="text-gray-400 text-sm font-bold ml-2">NOMOR WA</label>
+                    <input type="text" name="no_telp" placeholder="0812..." required
+                        class="w-full bg-white/5 border border-white/10 rounded-2xl p-4 mt-2 text-white focus:border-orange-500 outline-none transition">
+                </div>
+            </div>
+            <div>
+                <label class="text-gray-400 text-sm font-bold ml-2">ALAMAT PENGIRIMAN (KOS/ASRAMA)</label>
+                <textarea name="alamat" rows="2" placeholder="Contoh: Kos Melati, No. 12, Kamar A3" required
+                    class="w-full bg-white/5 border border-white/10 rounded-2xl p-4 mt-2 text-white focus:border-orange-500 outline-none transition"></textarea>
+            </div>
+            <div>
+                <label class="text-gray-400 text-sm font-bold ml-2">PASSWORD</label>
+                <input type="password" name="password" placeholder="Min. 8 karakter" required
+                    class="w-full bg-white/5 border border-white/10 rounded-2xl p-4 mt-2 text-white focus:border-orange-500 outline-none transition">
+            </div>
+            <button type="submit" class="w-full bg-orange-500 text-white font-black p-4 rounded-2xl hover:scale-105 transition shadow-lg shadow-orange-500/20">
+                DAFTAR SEKARANG
+            </button>
+        </form>
+
+        <p class="text-center text-gray-500 mt-8">
+            Sudah punya akun? <a href="{% url 'home:login' %}" class="text-orange-500 font-bold hover:underline">Login di sini</a>
+        </p>
+    </div>
+</body>
+</html>
